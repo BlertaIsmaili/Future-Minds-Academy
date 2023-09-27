@@ -1,25 +1,27 @@
 body {
     padding: 10px;
     margin: 10px;
+    background-color: rgb(227, 237, 238);
+
 }
 
 
-body {
-    background-color: rgb(245, 246, 247);
-}
 
 h1 {
     color: rgb(4, 27, 27);
+    border: 2px;
     margin-right: 10px;
     font-size: 55px;
 
     h2 {
         background: color #572c2c;
+        border: 2px;
         margin-top: 10p;
     }
 }
 
 p {
-    color: rgb(229, 255, 0);
+    color: rgb(2, 2, 2);
+    border: 2px;
     font-size: 35px;
 }
