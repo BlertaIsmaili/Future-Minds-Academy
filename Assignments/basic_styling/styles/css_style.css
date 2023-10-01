@@ -6,6 +6,10 @@ body{
 h1{
     text-align: center;
 }
+.formula{
+  text-align: center;
+  font-size: xx-large;
+}
 
 .text{
     font-size: 20px;
@@ -14,14 +18,14 @@ h1{
 }
 
 .topnav {
-    background-color: #805959;
+    background-color: rgb(141, 45, 45);
     overflow: hidden;
   }
   
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;    
     text-decoration: none;
@@ -30,11 +34,11 @@ h1{
   }
   
   .topnav a:hover {
-    border-bottom: 3px solid rgb(8, 8, 8);
+    border-bottom: 3px solid rgb(233, 210, 210);
   }
   
   .topnav a.active {
-    border-bottom: 3px solid rgb(8, 8, 8);
+    border-bottom: 3px solid rgb(233, 210, 210);
   }
 
   div {
@@ -67,8 +71,8 @@ h1{
 
   
   footer {
-    background-color: bisque;
-    color: #333;
+    background-color: rgba(200, 100,67,0.6);
+    color: rgb(153, 68, 68);
     text-decoration:underline;
     text-shadow: #2e0707;
     text-align: center;
