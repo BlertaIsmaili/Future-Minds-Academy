@@ -1,6 +1,5 @@
-body{
-    background: rgba(255, 128,56,0.6);
-    background: linear-gradient(48deg, rgba(255, 128,56,0.6) 35%, rgba(238, 189,67,0.6) 47% );
+main{
+    background-image: url('/Assignments/basic_styling/images/background.jpg')
 }
 
 h1{
@@ -15,10 +14,12 @@ h1{
     font-size: 20px;
     color: black;
     font-style:normal;
+    background: rgba(230, 168, 133, 0.6);
+    background: linear-gradient(32deg, rgba(230, 168,133,0.6) 35%, rgba(238, 189,67,0.6) 47% );
 }
 
 .topnav {
-    background-color: rgb(141, 45, 45);
+    background-color: rgb(160, 93, 93);
     overflow: hidden;
   }
   
