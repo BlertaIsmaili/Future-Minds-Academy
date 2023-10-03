@@ -1,27 +1,31 @@
+table {
+    width: 40%;
+    height: auto;
+    border-collapse:collapse;
+}
+
 th {
-    background: rgb(0, 128, 0);
+    background: rgb(3, 102, 3);
     color: rgb(0, 0, 0);
-    font-size:35px;
-    margin: 10px 10px 10px 10ppx;
-    padding:10px 10px 10px 10px;
+    font-size:x-large;
+    text-align:left;
+    border-bottom: 2px solid #ffffff;
+    height: 50px;
 }
-
-table, th, td{
-    border-bottom: 2px;
-}
-
-tr:nth-child(even){
+    tr:nth-child(even){
     background: rgb(56, 108, 0);
     color: rgb(255,255,255);
-    font-size: xx-large;
-    margin: 10px 10px 10px 10ppx;
-    padding:10px 10px 10px 10px;
+    font-size: x-large;
+    text-align: left; 
+    border-bottom: 2px solid #ffffff;
+    height: 50px;
 }
 
 tr:nth-child(odd){
-    background: rgb(167, 209, 122);
+    background: rgb(132, 218, 41);
     color: rgb(255,255,255);
-    font-size: xx-large;
-    margin: 10px 10px 10px 10ppx;
-    padding:10px 10px 10px 10px;
+    font-size: x-large;
+    text-align: left;
+    border-bottom: 2px solid #ffffff;
+    height: 50px;
 }
