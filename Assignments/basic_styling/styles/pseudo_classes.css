@@ -5,7 +5,7 @@ table {
 }
 
 th {
-    background: rgb(3, 102, 3);
+    background: rgb(32, 185, 32);
     color: rgb(0, 0, 0);
     font-size:x-large;
     text-align:left;
@@ -13,7 +13,7 @@ th {
     height: 50px;
 }
     tr:nth-child(even){
-    background: rgb(56, 108, 0);
+    background: rgb(94, 155, 28);
     color: rgb(255,255,255);
     font-size: x-large;
     text-align: left; 
@@ -22,7 +22,7 @@ th {
 }
 
 tr:nth-child(odd){
-    background: rgb(132, 218, 41);
+    background: rgb(143, 196, 88);
     color: rgb(255,255,255);
     font-size: x-large;
     text-align: left;

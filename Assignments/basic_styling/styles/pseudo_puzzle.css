@@ -1,0 +1,20 @@
+body {
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+p:hover {
+    background-color: rgb(0, 132, 255);
+}
+
+
+p:hover::first-letter {
+    font-size: 29px;
+    font-weight: bold;
+    color: #f03a26;
+}
