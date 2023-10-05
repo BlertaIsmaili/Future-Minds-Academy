@@ -21,4 +21,5 @@ img:hover {
     border:dashed red;
     margin: 5px 5px 0px 0px ;
     padding: 10px ;
+    cursor:pointer;
 }
