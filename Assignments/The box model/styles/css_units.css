@@ -1,16 +1,19 @@
 body {
     margin: 0;
     width: 50%;
-    ;
+    height: auto;
 }
 
 h1 {
     text-decoration: underline;
     font-size: 2em;
+    margin-top: 0%;
 }
 
 p {
     font-size: 0.9em;
+    margin-top: 0%;
+    margin-left: 0%;
 }
 
 section {
