@@ -55,5 +55,7 @@ iframe {
     border:solid 1px red;
     border-radius: 500px 500px;
     background-color: red;
+    color: rgb(252, 252, 252);
     float: right;
+    font-size: 1em;
 }
