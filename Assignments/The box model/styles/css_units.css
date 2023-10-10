@@ -1,7 +1,7 @@
 body {
     margin: 0;
     width: 50%;
-    height:100vh;
+
 }
 
 h1 {
@@ -19,6 +19,7 @@ p {
 section {
     height: 25vh;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .one {
