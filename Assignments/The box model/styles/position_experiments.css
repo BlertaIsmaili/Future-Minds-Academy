@@ -58,4 +58,7 @@ iframe {
     color: rgb(252, 252, 252);
     float: right;
     font-size: 1em;
+    position: relative;
+    right:-10px;
+    top:-10px;
 }
