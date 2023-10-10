@@ -30,6 +30,8 @@ section {
 hr {
     width: 33%;
     border-color: red;
+    position: relative;
+    z-index: 1;
 }
 
 .two {
