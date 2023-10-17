@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A short description of the page content">
   <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css/pp_style.css">
 </head>
 
 <body>
@@ -11,29 +14,26 @@
     <h1>Contact Me!</h1>
     <hr>
     <nav>
-      <ul>
-        <li>
-          <a href="home.html">Home</a>
-          <span style='font-size:20px;'>&#127969;</span>
-        </li>
-        <li>
-          <a href="my_projects.html">My Projects</a>
-          <span style='font-size:20px;'>&#128640;</span>
-        </li>
-      </ul>
-    </nav>
+      <section class="nav">
+          <a href="home.html"> Home</a>
+          <span>&#128640;</span>
+      </section>
+      <section class="nav">
+          <a href="my_projects.html"> My projects!</a>
+          <span>&#128153;</span>
+      </section>
+  </nav>
   </header>
-
   <main>
     <hr>
     <section id="Message">
       <h2>Send me a Message</h2>
       <form>
-        <input type="email" id="email" name="email" placeholder="Email"><br>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <br>
         <textarea name="comment" rows="5" cols="50" placeholder="What do you want to say"></textarea>
         <br>
         <input type="submit" value="Send Message!">
-
       </form>
     </section>
 
@@ -49,9 +49,9 @@
 
   </main>
 
-  <footer>
-    <p>All Rights Reserved Blerta Ismaili &copy; </p>
-  </footer>
+  <footer id="arr">
+    <p id="footer"> All Rights Reserved Blerta Ismaili &copy; </p>
+</footer>
 
 </body>
 

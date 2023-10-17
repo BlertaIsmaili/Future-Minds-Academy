@@ -6,6 +6,7 @@ body{
 div {
     background-color: rgb(255, 255, 255);
     display: block;
+    box-sizing: border-box;
 }
 
 .box {
@@ -29,36 +30,39 @@ p {
 }
 
 iframe {
-    width: 30%;
-    height: 30%;
-    border-radius: 20px;
-    border: solid 1px;
-    padding: 40px;
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-
-
+    width: 90%;
+    height: 50%;
 }
 
 .caption {
     text-align: center;
     margin-top: 10px; 
     font-weight: bold;
-    position: relative;
-    bottom: 55px;
-    z-index: index 1;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
 
 }
 
 .icon {
     border:solid 1px red;
-    border-radius: 500px 500px;
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
     background-color: red;
     color: rgb(252, 252, 252);
     float: right;
-    font-size: 1em;
+    font-size: 0.7em;
+    text-align: center;
+    padding-bottom: 3px;
     position: relative;
     right:-10px;
-    top:-10px;
+    top:6px;
+}
+
+.video {
+    text-align: center;
 }

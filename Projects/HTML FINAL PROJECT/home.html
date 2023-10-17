@@ -14,26 +14,23 @@
     <header>
         <h1 class="h1"> Personal Portfolio </h1>
         <hr>
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="my_projects.html"> My Projects</a>
-                    <span>&#128640;</span>
-                </li>
-                <li>
-                    <a href="contact_me.html"> Contact me!</a>
-                    <span>&#128153;</span>
-                </li>
-            </ul>
+        <nav>
+            <section class="nav">
+                <a href="my_projects.html"> My Projects</a>
+                <span>&#128640;</span>
+            </section>
+            <section class="nav">
+                <a href="contact_me.html"> Contact me!</a>
+                <span>&#128153;</span>
+            </section>
         </nav>
+        <hr>
     </header>
-    <hr>
 
     <main>
-        <section id="Info">
-            <h2> Who is <u>Blerta Ismaili ?</u>
-            </h2>
-                <img src="Images/BM.png" width="300" alt="In this photo is Blerta Ismaili">
+        <section class="info">
+            <h2> Who is <u>Blerta Ismaili ?</u></h2>
+            <img src="Images/BM.png" width="300" alt="In this photo is Blerta Ismaili">
             <p> Blerta Ismaili is a passionate and dedicated math educator committed to inspiring a love for mathematics
                 in her students. With 4 years of teaching experience, she has had the privilege of shaping the
                 mathematical journeys of countless individuals, helping them not only grasp the subject but also
@@ -44,38 +41,31 @@
                 immersive learning experience. Whether through hands-on activities or virtual simulations, she strives
                 to make math tangible and relatable.</p>
         </section>
-
-        <section id="Education">
+        <section class="info">
             <h2> Education </h2>
-            <ul>
-                <li> Primary school:</li>
-                <ul>
-                    <li>
-                        <b>Selami Hallaqi</b> ( 1996-2005)
-                    </li>
-                </ul>
-                <li> High school: </li>
-                <ul>
-                    <li>
-                        <b>Gymnasium "Zenel Hajdini" Mathematics - Informatics </b>( 2005-2008)
-                    </li>
-                </ul>
-                <li> University:</li>
-                <ul>
-                    <li> Bachelor's degree in <b>Telecommunications</b> from the University of Electrical and Computer
-                        Engineering in Prishtina (2008-2013) </li>
-                    <li> Bachelor's degree in <b>Mathematics</b> from the University Kadri Zeka in Gjilan (2008-2013)
-                    </li>
-                </ul>
-                <li> Trainings and courses</li>
-                <ul>
-                    <li> Training "Girls with Code" for Microbit</li>
-                    <li> Following the Programming with HTML, CSS and JAVASCRIPT course at "Future Minds Academy" </li>
-                </ul>
-            </ul>
+            <section class="border">
+                <h4>Primary school:</h4>
+                <p>Selami Hallaqi ( 1996-2005)</p>
+            </section>
+            <section class="border">
+                <h4> High school: </h4>
+                <p>Gymnasium "Zenel Hajdini" Mathematics - Informatics ( 2005-2008) </p>
+            </section>
+            <section class="border">
+                <h4> University:</h4>
+                <p> Bachelor's degree in <b>Telecommunications</b> from the University of Electrical and Computer
+                    Engineering in Prishtina (2008-2013) </p>
+                <p> Bachelor's degree in <b>Mathematics</b> from the University Kadri Zeka in Gjilan (2008-2013)
+                </p>
+            </section>
+            <section class="border">
+                <h4> Trainings and courses</h4>
+                <p> Training <b>"Girls with Code"</b> for Microbit</p>
+                <p> Following the Programming with HTML, CSS and JAVASCRIPT course at <b>"Future Minds Academy"</b> </p>
+            </section>
         </section>
 
-        <section id="Skills">
+        <section class="info">
             <h2> My skills </h2>
             <table border="1" width="50%">
                 <thead>
@@ -105,20 +95,24 @@
             </table>
         </section>
 
-        <section id="Projects">
+        <section class="info">
             <h2> My Projects </h2>
             <ol>
-                <li> Shkolla "Hello Academy of Education" <a href="my_projects.html"> &#8594; Read more </a>
+                <li> Shkolla "Hello Academy of Education" <span class="read-more"><a href="my_projects.html">&#8594;</a></span>
                 </li>
-                <li> Coldplay - Music Band <a href="my_projects.html">&#8594; Read more </a>
+                <br>
+                <li> Coldplay - Music Band <span class="read-more"><a href="my_projects.html">&#8594;</a></span>
+
                 </li>
-                <li> Pop Quiz <a href="my_projects.html">&#8594; Read more </a>
+                <br>
+                <li> Pop Quiz <span class="read-more"><a href="my_projects.html">&#8594;</a></span>
                 </li>
+                <br>
             </ol>
         </section>
     </main>
-    <footer>
-        <p> All Rights Reserved Blerta Ismaili &copy; </p>
+    <footer id="arr">
+        <p id="footer"> All Rights Reserved Blerta Ismaili &copy; </p>
     </footer>
 </body>
 
