@@ -2,14 +2,14 @@
 /* Homepage CSS */
 
 body {
-    background-image: url("images/bck.jpg");
+    background-image: url(../images/back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
     padding: 0 200px 0 200px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    cursor: url('contents/cursorimage.png')10 10, auto;
+    cursor: url('../images/cursor.png') 5 5, auto;
 }
 
 h1 {
@@ -100,6 +100,11 @@ section {
     border-radius: 5px;
     background-color:lightcoral;
 }
+.read-more:hover{
+    border: 3px solid red;
+    border-radius: 5px;
+    background-color:rgba(240, 128, 128, 0.582);
+}
 #footer{
     padding: 10px 10px 10px 10px;
     text-align: center;
@@ -112,3 +117,13 @@ li {
 img{
     box-shadow: 1px 1px 4px 4px white ;
 }
+/* CSS for the page Contact me */
+
+.contact{
+    padding: 10px;
+}
+
+.message:hover{
+    background-color: bisque;
+}
+
