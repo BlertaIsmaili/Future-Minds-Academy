@@ -9,7 +9,7 @@ body {
     text-align: center;
     padding: 0 200px 0 200px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    cursor: url('../images/cursor.png') 5 5, auto;
+    cursor: url('../images/cursorr.png') 5 5, auto;
 }
 
 h1 {
@@ -41,11 +41,15 @@ h4 {
 .info {
     padding-bottom: 10px;
     background-color:antiquewhite ;
+    transition: transform 0.2s;
+
 }
 
 .info:hover {
-    background-color: rgb(90, 80, 80);
+    background-color:  rgb(221, 191, 191);
     border: 1px solid brown;
+    transform: scale(1.1);
+
 
 }
 table {
@@ -65,7 +69,17 @@ table {
     margin-right: 10px;
     margin-top: 10px;
     padding: 10px 10px 10px 10px;
+    transition: transform 0.2s;
+
 }
+.nav:hover{
+    transform: scale(1.1);
+    background-color: rgb(221, 191, 191);
+    border: 0px solid brown;
+    transform: scale(1.1);
+    cursor: context-menu;
+}
+
 
 section {
     background-color: wheat;
@@ -86,11 +100,15 @@ section {
     color: rgb(16, 16, 17);
     text-align: center;
     border-radius: 10px;
+    transition: transform 0.2s;
+
 }
 
 #arr:hover{
-    background-color: rgb(90, 80, 80);
+    background-color:  rgb(221, 191, 191);
     border: 0px solid brown;
+    transform: scale(1.1);
+
 }
 .read-more {
     position: relative;
@@ -99,11 +117,15 @@ section {
     border: 1px solid red;
     border-radius: 5px;
     background-color:lightcoral;
+    transition: transform 0.2s;
+
 }
 .read-more:hover{
     border: 3px solid red;
     border-radius: 5px;
-    background-color:rgba(240, 128, 128, 0.582);
+    background-color: rgb(221, 191, 191);
+    transform: scale(1.1);
+
 }
 #footer{
     padding: 10px 10px 10px 10px;
@@ -125,5 +147,7 @@ img{
 
 .message:hover{
     background-color: bisque;
+    transform: scale(1.1);
+
 }
 
