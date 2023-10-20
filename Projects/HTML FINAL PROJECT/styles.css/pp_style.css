@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
-    padding: 0 200px 0 200px;
+    margin: 1em 10% 0 10%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     cursor: url('../images/cursorr.png') 5 5, auto;
 }
