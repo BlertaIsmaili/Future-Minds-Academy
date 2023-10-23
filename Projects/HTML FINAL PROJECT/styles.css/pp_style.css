@@ -8,7 +8,7 @@ body {
     background-attachment: fixed;
     text-align: center;
     margin: 1em 10% 0 10%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: monospace;
     cursor: url('../images/cursorr.png') 5 5, auto;
 }
 
@@ -39,18 +39,16 @@ h4 {
     padding-bottom: 0px;
 }
 .info {
-    padding-bottom: 10px;
     background-color:antiquewhite ;
     transition: transform 0.2s;
-
+    font-family: inherit;
 }
 
 .info:hover {
     background-color:  rgb(221, 191, 191);
     border: 1px solid brown;
-    transform: scale(1.1);
-
-
+    transform: scale(1.01);
+    border: 1px transparent;
 }
 table {
     display: block;
@@ -59,27 +57,32 @@ table {
     background-color: burlywood;
     width: max-content;
     box-shadow: 1px 1px 4px 4px white;
+    text-decoration: none;
 }
 
 .nav {
     border-radius: 10px;
     text-align: center;
     display: inline;
+    text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     padding: 10px 10px 10px 10px;
     transition: transform 0.2s;
+    cursor: inherit;
 
 }
 .nav:hover{
     transform: scale(1.1);
     background-color: rgb(221, 191, 191);
     border: 0px solid brown;
-    transform: scale(1.1);
-    cursor: context-menu;
+    transform: scale(1.01);
 }
-
+nav a {
+    text-decoration: none;
+    cursor: inherit;
+}
 
 section {
     background-color: wheat;
@@ -124,13 +127,13 @@ section {
     border: 3px solid red;
     border-radius: 5px;
     background-color: rgb(221, 191, 191);
-    transform: scale(1.1);
+    transform: scale(1.01);
 
 }
 #footer{
     padding: 10px 10px 10px 10px;
     text-align: center;
-    text-decoration: underline;
+    text-decoration:none;
 }
 
 li {
@@ -143,11 +146,13 @@ img{
 
 .contact{
     padding: 10px;
+    font-family: inherit;
 }
 
 .message:hover{
     background-color: bisque;
-    transform: scale(1.1);
-
+    transform: scale(1.01);
 }
-
+form{
+    font-family: inherit;
+}
