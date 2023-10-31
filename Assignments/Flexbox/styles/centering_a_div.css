@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.center {
+    margin: 0;
+    padding: 1rem;
+    width: 200px;
+    background-color: white;
+    top: 250px;
+    left: 650px;
+    border: 2px solid black;
+}
