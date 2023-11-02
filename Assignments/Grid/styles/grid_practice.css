@@ -28,8 +28,9 @@ body{
     grid-column-start: 1;
     grid-column-end: 4;
     display: grid;
-    grid-template-rows: repeat(1,217px);
-    grid-template-columns: repeat(15,73px);
+    column-gap: 4em;   
+    grid-template-rows: repeat(1,246px);
+    grid-template-columns: repeat(4, 336px);
 }
 
 .item3{
