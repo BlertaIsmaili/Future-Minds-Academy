@@ -27,10 +27,8 @@ body{
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
-    display: grid;
-    column-gap: 4em;   
-    grid-template-rows: repeat(1,246px);
-    grid-template-columns: repeat(4, 336px);
+    grid-template-rows: repeat(1,217px);
+    grid-template-columns: repeat(15,73px);
 }
 
 .item3{
@@ -66,6 +64,3 @@ body{
     grid-column-end: 16;
     background-color: aliceblue;
 }
-
-
-
