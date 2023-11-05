@@ -20,7 +20,7 @@ main {
 }
 
 .background{
-    background-color: green;
+    background-color: mediumaquamarine;
     display: grid;
     grid-row: 1/2;
     border-bottom-right-radius: 30px;
