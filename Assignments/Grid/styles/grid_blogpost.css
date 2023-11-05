@@ -1,118 +1,120 @@
 body {
-    background-color: bisque;
     height: 100vh;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.main-container {
-    display: grid;
-    grid-template-columns: repeat(4, 274.5px);
-    grid-template-rows: repeat(2, 400px);
-}
-
-.header {
-    display: grid;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.aside {
     background-color: rgb(62, 76, 88);
-    color: white;
-    padding: 35px;
-    align-items: center;
-    text-align: right;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: end;
 }
 
-.uppercase {
+.asideDiv{
+    position: fixed;
+    top: 25%;
+}
+
+.asideTitle{
+    font-size: 2.5rem;
+    font-weight: 900;
     text-transform: uppercase;
     margin: 0;
 }
 
-.button {
+.asideParagraph{
+    font-size:large;
+    color: lightgrey;
+    margin: 0;
+}
+
+.asideButton{
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    padding: 10px 20px;
+    margin: 10px 0;
     text-transform: uppercase;
 }
 
-.button:hover {
-    background-color: rgb(164, 194, 195);
+.asideButton:hover{
+    background-color: antiquewhite;
+    color: black;
 }
 
-.child-one {
-    display: grid;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 9;
-    background-color: white;
-    padding: 0px 40px;
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
 }
 
-.pinned-post {
-    font-size: 0.8em;
-    color: rgb(144, 143, 143);
+.sectionSubTitle,
+.sectionHr{
+    margin: 0;
+    color:gray;
     text-transform: uppercase;
-    margin: 40px 0px 0px 0px;
+    font-size: 0.8rem;
 }
 
-.name {
+.section1{
+    margin: 40px 0;
+}
+
+.sectionTitle{
+font-size: 2rem;
+color: black;
+}
+
+.sectionName{
+    color: blue;
     cursor: pointer;
-    color: rgb(69, 143, 183);
 }
 
-.css-color {
-    background-color: green;
+.sectionSpanCSS{
+    background-color: rgb(22, 161, 27);
     color: white;
-    padding: 0 8px;
     cursor: pointer;
 }
 
-.html-color {
-    background-color: rgb(64, 132, 197);
+.sectionSpanHTML{
+    background-color: rgb(23, 97, 182);
     color: white;
-    padding: 0 8px;
     cursor: pointer;
 }
 
-hr {
-    background-color: lightgray;
-    width: 100%;
-    margin: 0px;
-    height: 0px;
+.sectionSpanJavascript{
+    background-color: rgb(199, 36, 36);
+    color: white;
+    cursor: pointer;
 }
 
-h1 {
-    margin: 0px;
+.le {
+    padding: 0 10px;
 }
 
-p {
-    margin: 0px;
-}
-
-img {
-    border-radius: 50%;
+.sectionImg{
     width: 60px;
     height: 60px;
-    float: right;
+    border-radius: 50%;
 }
 
-.jsc-color {
-    background-color: red;
-    color: white;
-    padding: 0 8px;
-    cursor: pointer;
+.sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.child-two {
-    display: grid;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 9;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 1em;
-    padding: 0px 40px;
+.sectionParagraph{
+    line-height: 40px;
+    font-size: 1.3rem;
 }
 
-.fixed {
-    position: fixed;
-}
+
