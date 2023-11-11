@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    height: 100vh;
+}
+
+.aside {
+    background-image: url(../images/sidebar-1.jpg);
+    background-color: rgb(0,0,0, 0.5);
+    color: aliceblue;
+}
+
+.black{
+    background-color: rgb(0,0,0, 0.5);
+    height: 100vh;
+}
+
+.main {
+    background-color: aqua;
+    overflow-y: scroll;
+}
+
+.active{
+    background-color: red;
+    padding: 0 10px;
+}
+
+.asideLogo{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.listItems{
+    margin: 10px 10px;
+    padding: 0 10px;
+}
+
+.listItems:hover{
+    background-color: red;
+}
+
+.listItemsInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 10px;
+}
+
+.listItemsImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
