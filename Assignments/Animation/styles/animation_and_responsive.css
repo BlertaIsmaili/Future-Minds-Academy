@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+}
+
+.mainImg{
+    transition-duration: 1000ms;
+    transition-property:transform;    
+    filter: blur(10px);
+}
+
+.mainImg:hover{
+    filter:none;
+    transform: rotate(720deg);
+}
