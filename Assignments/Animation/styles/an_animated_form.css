@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    cursor: url(../images/cursor.png) 5 5, auto;
+}
+
+.form{
+background-color: lightgrey;
+margin: 20px;
+padding: 20px;
+}
+
+.formInfo{
+    margin: 20px;
+}
+
+input{
+    color: grey;
+    padding: 10px;
+    border-radius: 1px solid grey;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+border-color: blue;
+}
+
+.formHiddenText{
+opacity: 0;
+animation: fadeIn 2s backwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+    }
+  }
+  
+.formSubmit{
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: inherit;
+}
+
+
+
+.formSubmitIcn{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 10%;
+    animation: spin 1.5s infinite linear;
+  }
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
