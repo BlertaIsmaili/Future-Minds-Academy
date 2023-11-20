@@ -1,0 +1,239 @@
+/*General Css*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "leftContainer rightContainer";
+    height: 100vh;
+}
+
+.active {
+    background-color: red;
+}
+
+.hoverEffect:hover {
+    background-color: rgb(209, 209, 209, 0.8);
+    color: black;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow {
+    box-shadow: 0px 5px 10px rgba(82, 85, 88, 0.3);
+}
+
+.circle {
+    background-color: white;
+    color: gray;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+.gap {
+    gap: 20px;
+}
+
+/*Aside (leftContainer(*/
+
+.leftContainer {
+    grid-area: leftContainer;
+    background-image: url(../images/sidebar-1.jpg);
+    background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: color;
+    color: aliceblue;
+    /* overflow-y: scroll; */
+}
+
+.black {
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.asideTitle {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+hr {
+    margin: 10px;
+}
+
+.asideLogo {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.listItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.listItemsInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.listItemsImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Main (right container) */
+.rightContainer {
+    grid-area: rightContainer;
+    background-color: rgb(210, 210, 210);
+    overflow-y: scroll;
+    padding: 10px 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    transition: border-bottom .6s ease-in-out;
+}
+
+#search:focus {
+    border-bottom: 2px solid blue;
+}
+
+
+/*Main*/
+
+.mainCard {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.mainCardInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mainCardTitle {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    color: white;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 10px;
+    margin-top: -30px;
+}
+
+.table {
+    padding: 30px;
+}
+
+.map {
+    width: 100vw;
+}
+
+.cardImg {
+    width: 25px;
+    height: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    border: hidden;
+}
+
+th,
+tr {
+    padding: 10px;
+    text-align: justify;
+}
+
+.copyright {
+    background-color: black;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    color: white;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 20px 0;
+}
+
+.section2Grid {
+    background-color: white;
+    border-radius: 4px;
+    text-align: end;
+}
+
+.booking {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.websiteVisits {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.revenue {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.followers {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+
+.space {
+    text-align: start;
+    margin: 0 10px;
+    font-size: small;
+    color: grey;
+}
+
+.fonts {
+    font-size: small;
+    color: grey;
+    padding: 10px;
+}

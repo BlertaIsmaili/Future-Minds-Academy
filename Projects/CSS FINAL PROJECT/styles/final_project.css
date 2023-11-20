@@ -6,18 +6,19 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 2fr 10fr;
     height: 100vh;
 }
 
 .aside {
     background-image: url(../images/sidebar-1.jpg);
-    background-color: rgb(0,0,0, 0.9);
+    background-color: rgb(0, 0, 0, 0.8);
     color: aliceblue;
-    background-blend-mode:color;
+    background-blend-mode: color;
+    overflow-y: scroll;
 }
 
-.black{
+.black {
     background-color: transparent;
     height: 100vh;
 }
@@ -27,43 +28,104 @@ body {
     overflow-y: scroll;
 }
 
-.active{
+.active {
     background-color: red;
     padding: 0 10px;
 }
 
-.asideLogo{
+.asideLogo {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.listItems{
+.listItems {
     margin: 10px 10px;
     padding: 0 10px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.listItems:hover{
-    background-color: red;
+.listItems:hover {
+    background-color: grey;
 }
 
-.listItemsInfo{
+.listItemsInfo {
     display: flex;
-    justify-content:start;
-    align-items:center;
+    justify-content: start;
+    align-items: center;
     gap: 10px;
 }
 
-.listItemsImg{
+.listItemsImg {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-.listItemsI{
+.listItemsI {
     display: flex;
     justify-content: end;
 }
 
+/*Right container*/
+
+.rightContainer {
+    background-color: lightgray;
+    overflow-y: scroll;
+}
+
+.section1 {
+    background-color: white;
+    margin: 20px 20px;
+    border-radius: 5px;
+
+}
+
+.section1Title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: o 20px;
+}
+
+.section1Icn {
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: -10px 10px;
+    border-radius: 2px;
+
+}
+
+h2 {
+    font-size: medium;
+    color: lightslategray;
+}
+
+.section1Img {
+    width: 25px;
+    height: 25px;
+}
+
+.section1Article {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    gap: 30px;
+}
+
+.section1ArticleInfo1 {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+}
+
+.section1ArticleInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
