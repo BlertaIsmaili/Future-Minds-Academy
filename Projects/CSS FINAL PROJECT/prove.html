@@ -110,7 +110,7 @@
         <div class="rightContainer">
             <header class="header">
                 <div class="flexCenter gap">
-                    <div class="circle flexCenter shadow">
+                    <div class="circle flexCenter shadow cursor">
                         <span class="material-symbols-outlined">
                             more_vert
                         </span>
@@ -119,22 +119,33 @@
                 </div>
                 <div class="flexCenter gap">
                     <form class="flexCenter">
-                        <input type="search" id="search" placeholder="Search">
-                        <label for="search" class="circle flexCenter shadow">
-                            <span class="material-symbols-outlined">
+                        <input type="search" id="search" placeholder="Search" class="cursor">
+
+                        <label for="search" class="circle flexCenter shadow cursor">
+
+                            <spsan class="material-symbols-outlined">
                                 search
-                            </span>
+                                </span>
                         </label>
+                        <div class="hiddenNotification shadow">
+                            <ul>
+                                <li>John Doe sent a message</li>
+                                <li>Someone viewed your profile</li>
+                                <li>John Doe sent a message</li>
+                                <li>Someone viewed your profile</li>
+                                <li>Another notification</li>
+                            </ul>
+                        </div>
                     </form>
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined cursor">
                         dashboard
                     </span>
 
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined cursor">
                         notifications
                     </span>
 
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined cursor">
                         person
                     </span>
                 </div>
@@ -213,11 +224,17 @@
                 <section class="section2">
                     <div class="booking">
                         <div class="section2Grid">
-                            <p class="fonts">Bookings</p>
-                            <p>184</p>
+                            <div class="fontsInfo1">
+                                <p>Bookings</p>
+                                <span class="numInfo">184</span>
+                            </div>
                             <hr>
-                            <p class="space">Get more space</p>
-
+                            <div class="fontsInfo2">
+                                <span class="material-symbols-outlined">
+                                    warning
+                                </span>
+                                <p>Get more space</p>
+                            </div>
                         </div>
                     </div>
                     <div class="websiteVisits">
@@ -243,11 +260,14 @@
                         </div>
                     </div>
                 </section>
-            </main>
+                </ma in>
 
-            <footer class="copyright">
-                <p>Venera</p>
-            </footer>
+                <footer class="copyright">
+                    <p></p>
+                </footer>
+
+
+
         </div>
 
     </div>
