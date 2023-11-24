@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Final Project</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-
-
-    <link rel="stylesheet" href="styles/prove.css">
+    <link rel="stylesheet" href="styles/test.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
 </head>
@@ -16,29 +14,27 @@
 <body>
     <div class="mainContainer">
         <aside class="leftContainer">
-            <div class="black">
-                <div class="asideTitle">
-                    <span>CP</span> <span>COOL PAGE</span>
+            <div class="asideTitle gap">
+                <span>CP</span> <span>COOL PAGE</span>
+            </div>
+            <hr>
+            <div class="listItems">
+                <div class="listItemsInfo">
+                    <img class="listItemsImg" src="images/avatar.jpg" alt="avatar">
+                    <p>John Doe</p>
                 </div>
-
-                <hr>
-                <div class="listItems">
-                    <div class="listItemsInfo">
-                        <img class="listItemsImg" src="images/avatar.jpg" alt="avatar">
-                        <p>John Doe</p>
-                    </div>
-                    <span class="material-symbols-outlined">expand_more</span>
-                </div>
-
-                <hr>
-
+                <span class="material-symbols-outlined">expand_more</span>
+            </div>
+            <hr>
+            <a href="#">
                 <div class="listItems active">
                     <div class="listItemsInfo">
                         <span class="material-symbols-outlined">dashboard</span>
                         <p>Dashboard</p>
                     </div>
                 </div>
-
+            </a>
+            <a href="#">
                 <div class="listItems hoverEffect">
                     <div class="listItemsInfo">
                         <span class="material-symbols-outlined">
@@ -48,7 +44,8 @@
                     </div>
                     <span class="material-symbols-outlined">expand_more</span>
                 </div>
-
+            </a>
+            <a href="#">
                 <div class="listItems hoverEffect">
                     <div class="listItemsInfo">
                         <span class="material-symbols-outlined"> apps</span>
@@ -56,7 +53,8 @@
                     </div>
                     <span class="material-symbols-outlined">expand_more</span>
                 </div>
-
+            </a>
+            <a href="#">
                 <div class="listItems hoverEffect">
                     <div class="listItemsInfo">
                         <span class="material-symbols-outlined"> content_paste</span>
@@ -64,7 +62,8 @@
                     </div>
                     <span class="material-symbols-outlined"> expand_more</span>
                 </div>
-
+            </a>
+            <a href="#">
                 <div class="listItems hoverEffect">
                     <div class="listItemsInfo">
                         <span class="material-symbols-outlined"> table </span>
@@ -72,7 +71,8 @@
                     </div>
                     <span class="material-symbols-outlined"> expand_more </span>
                 </div>
-
+            </a>
+            <a href="#">
                 <div class="listItems hoverEffect">
                     <div class="listItemsInfo">
                         <span class="material-symbols-outlined">location_on</span>
@@ -80,7 +80,8 @@
                     </div>
                     <span class="material-symbols-outlined">expand_more</span>
                 </div>
-
+            </a>
+            <a href="#">
                 <div class="listItems hoverEffect">
                     <div class="listItemsInfo">
                         <span class="material-symbols-outlined">Widgets</span>
@@ -88,7 +89,8 @@
                     </div>
                     <span class="material-symbols-outlined">expand_more</span>
                 </div>
-
+            </a>
+            <a href="#">
                 <div class="listItems hoverEffect">
                     <div class="listItemsInfo">
                         <span class="material-symbols-outlined">show_chart</span>
@@ -96,7 +98,8 @@
                     </div>
                     <span class="material-symbols-outlined">expand_more</span>
                 </div>
-
+            </a>
+            <a href="#">
                 <div class="listItems hoverEffect">
                     <div class="listItemsInfo">
                         <span class="material-symbols-outlined">date_range</span>
@@ -104,30 +107,38 @@
                     </div>
                     <span class="material-symbols-outlined">expand_more</span>
                 </div>
-            </div>
+            </a>
         </aside>
-
         <div class="rightContainer">
             <header class="header">
                 <div class="flexCenter gap">
-                    <div class="circle flexCenter shadow cursor">
-                        <span class="material-symbols-outlined">
+                    <div title="See more" class="circle flexCenter shadow cursor">
+                        <spa class="material-symbols-outlined">
                             more_vert
-                        </span>
+                            </span>
                     </div>
                     <p>Dashboard</p>
                 </div>
                 <div class="flexCenter gap">
                     <form class="flexCenter">
                         <input type="search" id="search" placeholder="Search" class="cursor">
-
-                        <label for="search" class="circle flexCenter shadow cursor">
-
-                            <spsan class="material-symbols-outlined">
+                        <label for="search" title="Search" class="circle flexCenter shadow cursor">
+                            <span class="material-symbols-outlined">
                                 search
-                                </span>
+                            </span>
                         </label>
-                        <div class="hiddenNotification shadow">
+                    </form>
+                    <a href="#" class="black">
+                        <span title="Dashboard" class="material-symbols-outlined cursor">
+                            dashboard
+                        </span>
+                    </a>
+                    <div class="notifications ">
+                        <span class="badge">5</span>
+                        <span class="material-symbols-outlined cursor">
+                            notifications
+                        </span>
+                        <div class="viewNotification shadow cursor">
                             <ul>
                                 <li>John Doe sent a message</li>
                                 <li>Someone viewed your profile</li>
@@ -136,24 +147,16 @@
                                 <li>Another notification</li>
                             </ul>
                         </div>
-                    </form>
-                    <span class="material-symbols-outlined cursor">
-                        dashboard
-                    </span>
-
-                    <span class="material-symbols-outlined cursor">
-                        notifications
-                    </span>
-
-                    <span class="material-symbols-outlined cursor">
-                        person
-                    </span>
+                    </div>
+                    <a href="#" class="black">
+                        <span title="Profile" class="material-symbols-outlined cursor">
+                            person
+                        </span>
+                    </a>
                 </div>
             </header>
-
             <main class="main">
                 <section class="mainCard">
-
                     <div class="mainCardInfo">
                         <div class="mainCardTitle">
                             <span class="material-symbols-outlined ">
@@ -162,11 +165,9 @@
                         </div>
                         <h1>Global Sales by Top Locations</h1>
                     </div>
-
-                    <div class="mainCardInfo gap">
+                    <div class="mainCardInfo">
                         <div class="table">
-
-                            <table width="50%">
+                            <table>
                                 <tr>
                                     <th><img class="cardImg" src="images/usa.png" alt="USA Flag"></th>
                                     <th>USA</th>
@@ -193,7 +194,7 @@
                                     <th>10.35%</th>
                                 </tr>
                                 <tr>
-                                    <th><img class="cardImg" src="images/romania.png" alt="Romania Flag"></th>
+                                    <th><img class="cardImg" src="images/Romania.png" alt="Romania Flag"></th>
                                     <th>Romania</th>
                                     <th>600</th>
                                     <th>7.87%</th>
@@ -204,12 +205,8 @@
                                     <th>550</th>
                                     <th>5.94%</th>
                                 </tr>
-
-
                             </table>
-
                         </div>
-
                         <div class="map">
                             <iframe
                                 src="
@@ -220,178 +217,172 @@
                     </div>
                     <br>
                 </section>
-                <section class="section2">
-                    <div class="booking">
-                        <div class="mainCardTitle orange">
-                            <span class="material-symbols-outlined ">
-                                weekend
-                            </span>
-                        </div>
-                        <div class="section2Grid">
-                            <div class="fontsInfo1">
+                <section class="secondCard">
+                    <div class="secondCardChild">
+                        <div class="cardHeader">
+                            <div class="mainCardTitle orange">
+                                <span class="material-symbols-outlined">
+                                    weekend
+                                </span>
+                            </div>
+                            <div class="fontCardTop ">
                                 <p>Bookings</p>
-                                <span class="numInfo">184</span>
+                                <span class="numCard">184</span>
                             </div>
-                            <hr>
-                            <div class="fontsInfo2">
-                                <span class="material-symbols-outlined">
-                                    warning
-                                </span>
-                                <p>Get more space</p>
-                            </div>
+                        </div>
+                        <hr>
+                        <div class="fontCardBottom">
+                            <span class="material-symbols-outlined">
+                                warning
+                            </span>
+                            <p>Get more space</p>
                         </div>
                     </div>
-
-                    <div class="booking">
-                        <div class="mainCardTitle pink">
-                            <span class="material-symbols-outlined ">
-                                equalizer
-                            </span>
-                        </div>
-                        <div class="section2Grid">
-                            <div class="fontsInfo1">
+                    <div class="secondCardChild">
+                        <div class="cardHeader">
+                            <div class="mainCardTitle pink">
+                                <span class="material-symbols-outlined">
+                                    equalizer
+                                </span>
+                            </div>
+                            <div class="fontCardTop">
                                 <p>Website Visits</p>
-                                <span class="numInfo">75.521</span>
+                                <span class="numCard">75.521</span>
                             </div>
-                            <hr>
-                            <div class="fontsInfo2">
-                                <span class="material-symbols-outlined">
-                                    sell
-                                </span>
-                                <p>Tracked from Google Analytics</p>
-                            </div>
+                        </div>
+                        <hr>
+                        <div class="fontCardBottom">
+                            <span class="material-symbols-outlined">
+                                sell
+                            </span>
+                            <p>Tracked from Google Analytics</p>
                         </div>
                     </div>
-
-                    <div class="booking">
-                        <div class="mainCardTitle green">
-                            <span class="material-symbols-outlined ">
-                                store
-                            </span>
-                        </div>
-                        <div class="section2Grid">
-                            <div class="fontsInfo1">
-                                <p>Renevue</p>
-                                <span class="numInfo">$34,245</span>
-                            </div>
-                            <hr>
-                            <div class="fontsInfo2">
+                    <div class="secondCardChild">
+                        <div class="cardHeader">
+                            <div class="mainCardTitle green">
                                 <span class="material-symbols-outlined">
-                                    date_range
+                                    store
                                 </span>
-                                <p>Last 24 hours</p>
                             </div>
+                            <div class="fontCardTop">
+                                <p>Revenue</p>
+                                <span class="numCard">$34,245</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="fontCardBottom">
+                            <span class="material-symbols-outlined">
+                                date_range
+                            </span>
+                            <p>Last 24 Hours</p>
                         </div>
                     </div>
-
-                    <div class="booking">
-                        <div class="mainCardTitle blue">
-                            <span class="material-symbols-outlined ">
-                                public
-                            </span>
-                        </div>
-                        <div class="section2Grid">
-                            <div class="fontsInfo1">
+                    <div class="secondCardChild">
+                        <div class="cardHeader">
+                            <div class="mainCardTitle blue">
+                                <span class="material-symbols-outlined">
+                                    public
+                                </span>
+                            </div>
+                            <div class="fontCardTop">
                                 <p>Followers</p>
-                                <span class="numInfo">+245</span>
-                            </div>
-                            <hr>
-                            <div class="fontsInfo2">
-                                <span class="material-symbols-outlined">
-                                    update
-                                </span>
-                                <p>Just Updated</p>
+                                <span class="numCard">+245</span>
                             </div>
                         </div>
+                        <hr>
+                        <div class="fontCardBottom">
+                            <span class="material-symbols-outlined">
+                                update
+                            </span>
+                            <p>Just Updated</p>
+                        </div>
                     </div>
-
                 </section>
-                <h3>Manage Listings</h3>
-                <section class="section3">
-
-                    <div class="photo1">
-                        <div class="cardAnimation">
-                            <img src="images/card-1.jpeg" alt="">
-                            <div class="photoIcons">
-                                <span class="material-symbols-outlined">view_quilt</span>
-                                <span class="material-symbols-outlined">edit</span>
-                                <span class="material-symbols-outlined">close</span>
-                            </div>
+                <h2>Manage Listings</h2>
+                <section class="thirdCard gap">
+                    <div class="thirdCardChild">
+                        <img class="thirdCardPhoto cursor" src="images/card-1.jpeg" alt="Cozy Apartment">
+                        <div class="photoIcons">
+                            <span title="View" class="material-symbols-outlined cursor gray">view_quilt</span>
+                            <span title="Edit" class="material-symbols-outlined cursor greenEdit">edit</span>
+                            <span title="Delete" class="material-symbols-outlined cursor red">close</span>
                         </div>
-                        <div class="paragraf">
-                            <h5> Cozy 5 Star Apartment</h5>
+                        <div class="paragraph">
+                            <h3> Cozy 5 Star Apartment</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore
-                                corporis ut tenetur.</p>
-                            <hr>
-                            <div class="location">
-                                <p>$899/night</p>
-                                <p> <span class="material-symbols-outlined">location_on</span>Barcelona, Spain</p>
+                                corporis ut tenetur. Nisi tempore corporis ut tenetur.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="location">
+                            <p>$899/night</p>
+                            <div class="citiesStyle">
+                                <span class="material-symbols-outlined">location_on</span>
+                                <p> Barcelona, Spain</p>
                             </div>
                         </div>
-
                     </div>
-
-                    <div class="photo1">
-                        <div class="cardAnimation">
-                            <img src="images/card-2.jpeg" alt="">
-                            <div class="photoIcons">
-                                <span class="material-symbols-outlined">view_quilt</span>
-                                <span class="material-symbols-outlined">edit</span>
-                                <span class="material-symbols-outlined">close</span>
-                            </div>
+                    <div class="thirdCardChild">
+                        <img class="thirdCardPhoto cursor" src="images/card-2.jpeg" alt="Office Studio">
+                        <div class="photoIcons">
+                            <span title="View" class="material-symbols-outlined cursor gray">view_quilt</span>
+                            <span title="Edit" class="material-symbols-outlined cursor greenEdit">edit</span>
+                            <span title="Delete" class="material-symbols-outlined cursor red">close</span>
                         </div>
-                        <div class="paragraf">
-                            <h5>Office Studio</h5>
+                        <div class="paragraph">
+                            <h3>Office Studio</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore
-                                corporis ut tenetur.</p>
+                                corporis ut tenetur. Nisi tempore corporis ut tenetur. Nisi tempore corporis ut tenetur.
+                            </p>
                             <hr>
                             <div class="location">
                                 <p>$1.119/night</p>
-                                <p> <span class="material-symbols-outlined">location_on</span>London, UK</p>
+                                <div class="citiesStyle">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    <p> London, UK</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="photo1">
-                        <div class="cardAnimation">
-                            <img src="images/card-3.jpeg" alt="">
-                            <div class="photoIcons">
-                                <span class="material-symbols-outlined">view_quilt</span>
-                                <span class="material-symbols-outlined">edit</span>
-                                <span class="material-symbols-outlined">close</span>
-                            </div>
+                    <div class="thirdCardChild">
+                        <img class="thirdCardPhoto cursor" src="images/card-3.jpeg" alt="Beautiful Castle">
+                        <div class="photoIcons">
+                            <span title="View" class="material-symbols-outlined cursor gray">view_quilt</span>
+                            <span title="Edit" class="material-symbols-outlined cursor greenEdit">edit</span>
+                            <span title="Delete" class="material-symbols-outlined cursor red">close</span>
                         </div>
-                        <div class="paragraf">
-                            <h5>Beautiful Castle</h5>
+                        <div class="paragraph">
+                            <h3>Beautiful Castle</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore
-                                corporis ut tenetur.</p>
+                                corporis ut tenetur. Nisi tempore corporis ut tenetur. Nisi tempore corporis ut tenetur.
+                            </p>
                             <hr>
                             <div class="location">
                                 <p>$459/night</p>
-                                <p> <span class="material-symbols-outlined">location_on</span>Milan, Italy</p>
+                                <div class="citiesStyle">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    <p>Milan, Italy</p>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </section>
-
             </main>
-
-
-            <footer class="copyright">
-                <div>
-                    <span class="footer">HOME</span>
-                    <span class="footer">COMPANY</span>
-                    <span class="footer">PORTFOLIO</span>
-                    <span class="footer">BLOG</span>
+            <hr>
+            <footer class="footerCard">
+                <div class="styleFooter">
+                    <a href="#">Home</a>
+                    <a href="#">Company</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Blog</a>
                 </div>
                 <div>
-                    <p>&copy; John Doe, 2023</p>
+                    <p class="copyrightFont">&copy; John Doe, 2023</p>
                 </div>
-
             </footer>
-
-
+        </div>
+    </div>
 </body>
 
 </html>

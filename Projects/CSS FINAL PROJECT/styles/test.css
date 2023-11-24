@@ -1,4 +1,3 @@
-/*General Css*/
 body,
 html {
     margin: 0;
@@ -47,31 +46,33 @@ html {
 }
 
 .gap {
-    gap: 20px;
+    gap: 30px;
 }
 
-/*Aside (leftContainer(*/
-
+/*Aside (leftContainer)*/
 .leftContainer {
     grid-area: leftContainer;
     background-image: url(../images/sidebar-1.jpg);
     background-color: rgb(0, 0, 0, 0.5);
     background-blend-mode: color;
     color: aliceblue;
-    /* overflow-y: scroll; */
+    padding: 5px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 .black {
-    background-color: rgb(0, 0, 0, 0.5);
-    height: 100vh;
+    color: black;
 }
 
 .asideTitle {
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 hr {
@@ -89,8 +90,8 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin: 10px 0;
-    padding: 0 10px;
     border-radius: 5px;
+    gap: 40px;
 }
 
 .listItemsInfo {
@@ -105,12 +106,12 @@ hr {
     border-radius: 50%;
 }
 
-/* Main (right container) */
+/* Main(right container/header) */
 .rightContainer {
     grid-area: rightContainer;
     background-color: rgb(210, 210, 210);
     overflow-y: scroll;
-    padding: 10px 40px;
+    padding: 10px 25px;
 }
 
 .header {
@@ -130,21 +131,54 @@ hr {
     border-bottom: 2px solid rgb(83, 19, 108);
 }
 
-.hiddenNotification {
+.notifications {
+    position: relative;
+    margin: 0;
+}
+
+.badge {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 13px;
+}
+
+.viewNotification {
     display: none;
     background-color: white;
-    border-radius: 3%;
-
+    border-radius: 3px;
 }
 
-.hiddenNotification li {
-    padding: 10px 10px;
+.viewNotification ul {
+    list-style: none;
+    width: 250px;
+    padding: 15px;
+    margin: 0;
 }
 
+.viewNotification li {
+    padding: 10px;
+    display: block;
+}
 
+.notifications:hover .viewNotification {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
 
-/*Main*/
+.viewNotification ul li:hover {
+    background-color: red;
+    border-radius: 3px;
+}
 
+/*First Section(Main Card)*/
 .main {
     padding: 60px 0;
 }
@@ -152,16 +186,12 @@ hr {
 .mainCard {
     background-color: white;
     border-radius: 5px;
-    position: relative;
 }
 
 .mainCardInfo {
     display: flex;
     align-items: center;
-}
-
-.booking {
-    position: relative;
+    gap: 10px;
 }
 
 .mainCardTitle {
@@ -172,11 +202,15 @@ hr {
     color: white;
     width: 40px;
     height: 40px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 2px;
     margin: 10px;
     margin-top: -10px;
-    position: absolute;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
 }
 
 .table {
@@ -187,11 +221,13 @@ hr {
 iframe {
     height: 100%;
     width: 100%;
+    border-radius: 3px;
 }
 
 .map {
     width: 50vw;
     height: 40vh;
+    padding: 0 20px;
 }
 
 .cardImg {
@@ -200,11 +236,12 @@ iframe {
 }
 
 table {
+    display: flex;
+    align-items: center;
     border-collapse: collapse;
     border: none;
     width: 100%;
     margin: auto;
-    /*padding: 40px;*/
     border: hidden;
 }
 
@@ -215,15 +252,8 @@ tr {
     border-bottom: 1px solid gray;
 }
 
-.copyright {
-    grid-column: 1/4;
-    grid-row: 3/4;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-}
-
-.section2 {
+/* Second Section */
+.secondCard {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -232,13 +262,31 @@ tr {
     margin: 60px 0;
 }
 
-.section2Grid {
+.secondCardChild {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 4px;
     text-align: end;
 }
 
-.fontsInfo1 {
+.orange {
+    background-color: orange;
+}
+
+.pink {
+    background-color: rgb(188, 91, 107);
+}
+
+.green {
+    background-color: rgb(104, 157, 24);
+}
+
+.blue {
+    background-color: rgb(93, 189, 215);
+}
+
+.fontCardTop {
     display: flex;
     flex-direction: column;
     font-size: small;
@@ -246,7 +294,7 @@ tr {
     padding: 10px;
 }
 
-.fontsInfo2 {
+.fontCardBottom {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -257,47 +305,48 @@ tr {
     color: grey;
 }
 
-.numInfo {
-    padding: 0 20px;
+.numCard {
+    padding: 0 10px;
     color: black;
     font-size: 1.5em;
-
 }
 
 h1 {
-    margin: 0px 0px 0px 100px;
+    margin-top: 5px;
 }
 
-.section3 {
+/*Third Section(Manage Listings)*/
+.thirdCard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-
 }
 
-.photo1 {
+.thirdCardChild {
     background-color: white;
     border-radius: 5px;
 }
 
-img {
+.thirdCardPhoto {
     border-radius: 5px;
     width: 300px;
-    height: 200px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    top: -10px;
+    top: -15px;
     margin: auto;
 }
 
-.paragraf {
+.paragraph {
     text-align: center;
+    color: gray;
+    padding: 10px;
 }
 
-h5 {
-    margin: 10px 10px;
+h3 {
+    margin: 0px 10px;
+    color: black;
 }
 
 .location {
@@ -319,30 +368,55 @@ h5 {
     visibility: hidden;
 }
 
+.red {
+    color: red;
+}
+
+.greenEdit {
+    color: green;
+}
+
+.gray {
+    color: gray;
+}
+
 img {
     transition: transform .5s cubic-bezier(0.2, -0.3, 0.62, 1.24);
 }
 
-.cardAnimation:hover img {
+.thirdCardChild:hover img {
     transform: translateY(-20px);
 }
 
-.cardAnimation:hover .photoIcons {
+.thirdCardChild:hover .photoIcons {
     visibility: visible;
 }
 
-.blue {
-    background-color: rgb(93, 189, 215);
+.citiesStyle {
+    display: flex;
+    align-items: center;
 }
 
-.green {
-    background-color: rgb(104, 157, 24);
+.footerCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.pink {
-    background-color: rgb(161, 50, 68)
+.styleFooter {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
 }
 
-.orange {
-    background-color: orange;
+.styleFooter a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.copyrightFont {
+    color: gray;
+    font-size: small;
+    padding-right: 10px;
 }
