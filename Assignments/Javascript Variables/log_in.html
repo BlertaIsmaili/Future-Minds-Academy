@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+
+<body>
+    <script>
+        let userName = prompt("Write the username:");
+        let userPassword = prompt("Write the password:");
+
+        const correctPassword = '12341234';
+        const correctUsername = 'admin';
+
+        if (userName == correctUsername && userPassword == correctPassword) {
+            console.log('Welcome to the website!');
+
+        }
+        else {
+            console.log('The credentials are used incorrectly!');
+        }
+    </script>
+</body>
+
+</html>
