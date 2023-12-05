@@ -10,23 +10,48 @@
         let operation = prompt('What operation would you like to use for those numbers?');
         let b = parseInt(prompt('Write the second number'));
         let rezultati;
-        if (operation == 'mbledhje') {
-            rezultati = a + b;
-        }
-        else if (operation == 'zbrijte') {
-            rezultati = a - b;
-        }
-        else if (operation == 'shumezim') {
-            rezultati = a * b;
-        }
-        else if (operation == 'pjesetim') {
-            if (b == 0) {
-                throw new Error('Cant divide by zero!!!');
-            }
-            rezultati = a / b;
-        }
-        console.log(`${rezultati}`);
+        // if (operation == 'mbledhje') {
+        //     rezultati = a + b;
+        // }
+        // else if (operation == 'zbritje') {
+        //     rezultati = a - b;
+        // }
+        // else if (operation == 'shumezim') {
+        //     rezultati = a * b;
+        // }
+        // else if (operation == 'pjesetim') {
+        //     if (b == 0) {
+        //         throw new Error('Cant divide by zero!!!');
+        //     }
+        //     rezultati = a / b;
+        // }
 
+        // else if (operation == 'modulus') {
+        //     if (a % b !== 0) {
+        //         throw new Error('Numbers are not divisible!!!');
+        //     }
+        //     rezultati = a % b == 0;
+        // }
+        // console.log(`Rezultati eshte ${rezultati}`);
+
+        switch (operation) {
+            case 'mbledhje':
+                rezultati = a + b;
+                break;
+            case 'zbritje':
+                rezultati = a - b;
+                break;
+            case 'shumezim':
+                rezultati = a * b;
+                break;
+            case 'pjesetim':
+                rezultati = a / b;
+                break;
+            case 'modulus':
+                rezultati = a % b == 0;
+                break;
+        }
+        console.log(`Rezultati eshte ${rezultati}.`)
     </script>
 </head>
 
