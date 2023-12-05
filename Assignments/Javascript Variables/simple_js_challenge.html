@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Js Challenge</title>
+</head>
+
+<body>
+    <script>
+        let kilometers = parseFloat(prompt('Write here kilometers:'));
+        let radius = parseFloat(prompt('Write here the radius of a circle:'));
+        let euro = parseFloat(prompt('Write here the amount of euro:'));
+
+        let miles = kilometers / 1.6;
+        console.log(`${kilometers} kilometers is equal to ${miles}`);
+        let area = Math.PI * Math.pow(radius, 2);
+        console.log("The area of the circle is: " + area.toFixed(2));
+        let dollars = euro * 1.12;
+        console.log(`${euro} Euros are equal to ${dollars}`);
+
+
+
+    </script>
+</body>
+
+</html>
