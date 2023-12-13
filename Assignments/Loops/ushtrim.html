@@ -12,7 +12,7 @@
 
 
 
-    <script>
+    <!-- <script>
         let text = 'Filani';
         let counter = 0;
 
@@ -20,6 +20,30 @@
             console.log(text);
             counter++;
         }
+    </script> -->
+    <script>
+        function fibonacciSequence(length) {
+
+            const sequence = [1, 1];
+
+            for (let i = 2; i < length; i++) {
+                const nextNumber = sequence[i - 1] + sequence[i - 2];
+                sequence.push(nextNumber);
+            }
+
+            return sequence;
+
+        }
+        const userInput = parseInt(prompt("Enter the number of Fibonacci sequence numbers to generate:"));
+
+        if (userInput > 0 && Number.isInteger(userInput)) {
+            const sequence = fibonacciSequence(userInput);
+            console.log("Fibonacci sequence:");
+            console.log(sequence.join(', '));
+        } else {
+            console.log("Please enter a valid positive integer.");
+        }
+
     </script>
 </body>
 
