@@ -13,23 +13,16 @@
 
 
     <script>
-        function sumOfNumbers() {
-            let total = 0;
-            while (true) {
-                let number = parseFloat(prompt("Enter a positive number:"));
-                if (number === 0) {
-                    break;
-                } else if (number < 0 || isNaN(number)) {
-                    alert("Please enter a positive number.");
-                } else {
-                    total += number;
-                }
-            }
-
-            console.log(`The sum of the numbers you wrote is equal to ${total}`);
+        let number = 1;
+        let product = 1;
+        while (number !== 0) {
+            number = parseInt(prompt('Write the number'));
+            sum *= number;
         }
 
-        sumOfNumbers();
+        console.log(`You wrote ${x} numbers`);
+
+
     </script>
 </body>
 
