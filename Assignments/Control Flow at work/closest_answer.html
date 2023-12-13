@@ -8,28 +8,121 @@
     <style>
         body {
             margin: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 250px;
         }
 
-        .rectangle {
+        .card {
             background-color: black;
             color: white;
-            width: 30%;
-            height: 60%;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
         }
 
         .rectangleScore {
             display: flex;
+            flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            padding: 50px;
+            font-size: 1.6em;
+
         }
 
-        .name {
+        .playerOneDiv {
+            display: flex;
+            flex-direction: column;
             background-color: green;
-            align-items: end;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .playerTwoDiv {
+            display: flex;
+            flex-direction: column;
+            background-color: red;
+            align-items: center;
+            padding: 20px;
         }
     </style>
 </head>
+
+<body>
+
+    <div class="card">
+        <h1>The correct answer is: </h1>
+        <div class="rectangleScore">
+            <div class="playerOneDiv">
+                <span id="player1">Player One </span>
+                <span id="firstAnswer"></span>
+            </div>
+            <div class="playerTwoDiv">
+                <span id="player2">Player Two </span>
+                <span id="secondAnswer"></span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        let answer = Math.floor(Math.random() * 20) + 1;
+        let playerOne = parseInt(prompt('Player One:'));
+        let playerTwo = parseInt(prompt('Player Two:'));
+
+        if (isNaN(playerOne) || isNaN(playerTwo))
+            throw new Error('Please write only numbers!');
+
+        if ((playerOne < 0 || playerOne > 20) ||
+            (playerTwo < 0 || playerTwo > 20)) {
+            throw new Error('Only selsct numbers between 0-20');
+        }
+
+        let playerOneDistance = Math.abs(answer - playerOne);
+        let playerTwoDistance = Math.abs(answer - playerTwo);
+        let winner;
+        let colorPlayerOne;
+        let colorPlayerTwo;
+
+        if (playerOneDistance < playerTwoDistance) {
+            colorPlayerOne = 'green';
+            colorPlayerTwo = 'red';
+        }
+
+        else if (playerOneDistance > playerTwoDistance) {
+            colorPlayerOne = 'green';
+            colorPlayerTwo = 'red';
+        }
+        else {
+            colorPlayerOne = 'orange';
+            colorPlayerTwo = 'orange';
+        }
+
+
+        let playerOneDiv = document.getElementById('playerOne');
+        let playerTwoDiv = document.getElementById('playerTwo');
+        let title = document.getElementById('title-content');
+        title.innerHTML = `The correct answer is : ${answer}`;
+        player1.style.backgroundColor = colorPlayerOne;
+        player2.style.backgroundColor = colorPlayerTwo;
+        let firstAnswer = document.getElementById('firstAnswer');
+        let secondAnswer = document.getElementById('secondAnswer');
+        firstAnswer.innerHTML = `${playerOneDistance}`;
+        secondAnswer.innerHTML = `${playerTwoDistance}`;
+
+
+
+
+    </script>
+
+</body>
+
+</html>
 
 <body>
 
@@ -47,7 +140,7 @@
 
 
 
-    <script>
+    <!-- <script>
         let answer = Math.floor(Math.random() * 20) + 1;
         let playerOne = parseInt(prompt('Player One:'));
         let playerTwo = parseInt(prompt('Player Two:'));
@@ -71,7 +164,7 @@
         console.log(`The correct answer is ${answer}`);
         console.log(`The winner is ${winner}`);
 
-    </script>
+    </script> -->
 </body>
 
 </html>

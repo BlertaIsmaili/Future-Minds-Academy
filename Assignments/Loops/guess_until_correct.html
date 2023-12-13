@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Until Correct</title>
+</head>
+
+<body>
+
+
+
+
+    <!-- <script>
+        let number = 1;
+        let product = 1;
+        while (number !== 0) {
+            number = parseInt(prompt('Write the number'));
+            sum *= number;
+        }
+
+        console.log(`You wrote ${x} numbers`);
+
+
+    </script> -->
+    <script>
+        const random = Math.floor(Math.random() * 6) + 1;
+        let counter = 0;
+        let answer;
+        do {
+            answer = parseInt(prompt('Guess the number:'));
+            counter++;
+        }
+        while (random != answer);
+
+
+        alert(`Congrats, you guessed the the correct number in ${counter} ${counter == 1 ? 'try' : 'tries'}`);
+
+    </script>
+</body>
+
+</html>
