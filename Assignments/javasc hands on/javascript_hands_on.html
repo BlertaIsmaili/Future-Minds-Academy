@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <script>
+        // 1. how to change the tab title 
+        // 2. how to change favicon
+        // 3. something that runs every second
+
+        document.title = "This is a new page title";
+        let faviconElement = document.querySelector("link[rel~='icon']");
+        let defaultFavicon = faviconElement.href;
+        let defautTitle = document.title;
+        let notificationFavicon = "https://jsdfds";
+        let notificationInterval;
+        let bellIconLink = getBellIconLink();
+        let isInDefaultState = true;
+
+        function startNotification(message) {
+            if (notificationInterval)
+                endNotification();
+
+            notificationInterval = setInterval(() => {
+                if (isInDefaultState)
+                    setToNotification(message);
+                else
+                    resetToDefault();
+                isInDefaultState = !isInDefaultState;
+            }, 1000);
+        }
+        function endNotification() {
+            clearInterval(notificationInterval);
+            resetToDefault();
+        }
+        function resetToDefault() {
+            document.title = defautTitle;
+            faviconElement.href = defaultFavicon;
+        }
+        function setToNotification(message) {
+            document.title = message;
+            faviconElement.href = bellIconLink;
+        }
+        function getBellIconLink() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 32;
+            canvas.height = 32;
+            const context = canvas.getContext('2d');
+            context.font = "32px sans-serif";
+            context.fillText('A', 0, 30);
+            return canvas.toDataUrl('image/png');
+
+        }
+    </script>
+</body>
+
+</html>

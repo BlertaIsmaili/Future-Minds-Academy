@@ -8,20 +8,19 @@
 </head>
 
 <body>
-
-
-
-
     <script>
-        let number = 1;
-        let product = 1;
+        let totali = 0;
+        let number = parseInt(prompt('Enter a number:'));
+
         while (number !== 0) {
-            number = parseInt(prompt('Write the number'));
-            sum *= number;
+            number = parseInt(prompt('Enter a number:'));
+
+            if (number < 0) {
+                alert('Enter a positive number');
+            }
+            totali = totali + number;
         }
-
-        console.log(`You wrote ${x} numbers`);
-
+        console.log(`The sum of the numbers is ${totali}`);
 
     </script>
 </body>

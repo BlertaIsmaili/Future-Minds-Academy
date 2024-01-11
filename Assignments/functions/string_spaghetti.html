@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let text = '       hello, dolly';
+        // text = text.trim().charAt(0).toUpperCase();
+        // text = text.charAt(0);
+        // text = text.toUpperCase();
+        // console.log(text);
+
+        let temperature = 'New York, 15°C';
+        let presja = temperature.indexOf(','); //8
+        let city = temperature.substring(0, presja); //New York
+        let temp = parseInt(temperature.substring(presja + 2, temperature.length - 2));
+        console.log(`Qyteti: ${city} dhe temperatura: ${temp}`);
+    </script>
+</body>
+
+</html>

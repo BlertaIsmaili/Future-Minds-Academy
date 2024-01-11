@@ -4,35 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maximum of tries</title>
+    <title>Maximum of 3 tries</title>
 </head>
 
 <body>
-
-
     <script>
         const correctPassword = '12341234';
-        let attempts = 3;
-        let loggedIn = false;
+        let tries = 3;
+
 
         do {
-            const input = prompt(`Enter the password (${attempts} ${attempts === 1 ? 'try' : 'tries'} left):`);
-            if (input === correctPassword) {
-                loggedIn = true;
+            let userPassword = prompt(`Enter the password (${tries} ${tries === 1 ? 'try' : 'tries'} left):`);
+
+            if (userPassword === correctPassword) {
+                alert('WELCOME!');
                 break;
-            } else {
-                attempts--;
-                if (attempts > 0) {
-                    alert(`Incorrect password. ${attempts} ${attempts === 1 ? 'try' : 'tries'} left.`);
+            }
+            else {
+                tries--;
+                if (tries > 0) {
+                    alert(`Incorrect password. ${tries} ${tries === 1 ? 'try' : 'tries'} left.`);
+
+                } else {
+                    alert("You can't try anymore.");
                 }
             }
-        } while (attempts > 0);
-
-        if (loggedIn) {
-            alert('Welcome!');
-        } else {
-            alert('Sorry, you are not allowed to try more than three times.');
         }
+        while (tries > 0);
     </script>
 </body>
 
